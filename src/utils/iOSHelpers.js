@@ -10,6 +10,10 @@ export const getOffsetTop = (elem) => {
 
   while (tempEl != null) {
     yPos += tempEl.offsetTop;
+
+    // Komodo Health - subtracting scrollTop to help calculate position of Popover
+    yPos -= tempEl.scrollTop;
+
     tempEl = tempEl.offsetParent;
   }
 
