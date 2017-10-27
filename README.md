@@ -1,6 +1,8 @@
 #### Komodo Health Specific Forked Changes
 There are issues with the Popover being mispositioned on IE when there is an input focused. We have a made slight edit to how the position is calculated in src/utils/iOSHelpers.js in the function getOffsetTop
 
+Also, I could not figure out how this library is typically published. It takes the src/ files and compiles them into the build/ folder, but and then when it typically installs, it only uses the /build folder. As a workaround, I just copied the contents of the build/ folder to the root directory, and committed those files.
+
 #### Note
 
 For *how-to* questions and other non-issues,
